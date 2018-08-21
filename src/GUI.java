@@ -13,21 +13,19 @@ public class GUI extends Frame {
     String displayedShipStatus;
     //String enteredShipName; for later
 
-    //here go the GUI components
+    //here is the user interface layout defined
     public GUI() {
         setLayout(new FlowLayout());
 
-        Panel namePanel = new Panel();
+            //components go here
             shipNameBox = new TextField("Enter Ship Name");
-            namePanel.add(shipNameBox);
+            add(shipNameBox);
 
-        Panel buttonPanel = new Panel();
             checkButton = new Button("Check schip status");
-            buttonPanel.add(checkButton);
+            add(checkButton);
 
-        Panel statusPanel = new Panel();
             shipStatusTextArea = new TextArea(displayedShipStatus);
-            statusPanel.add(shipStatusTextArea);
+            add(shipStatusTextArea);
 
         setTitle("Ship checker");
 
