@@ -1,7 +1,7 @@
 import java.util.HashMap;
 
 public class Systems {
-    static String System
+    static String Component;
     public static void main(String[] args) {
         HashMap<String, Integer> systemList = new HashMap<String, Integer>();
             systemList.put("Life Support",98);
@@ -10,8 +10,7 @@ public class Systems {
             systemList.put("Commuications Array",65);
             systemList.put("Door Control",98);
 
-        public void systemStatus(String System) {
-
-        }
+        //public static void systemStatus(String System) {
+        //}
     }
 }
