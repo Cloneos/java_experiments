@@ -3,7 +3,7 @@ import java.awt.event.*;
 
 //import het spaceship bestand hier straks
 
-public class GUI extends Frame {
+public class GUI extends Frame implements ActionListener {
     //declaring components
     private TextField shipNameBox;
     private Button checkButton;
@@ -23,6 +23,7 @@ public class GUI extends Frame {
 
             checkButton = new Button("Check schip status");
             add(checkButton);
+                checkButton.addActionListener(this);
 
             shipStatusTextArea = new TextArea(displayedShipStatus);
             add(shipStatusTextArea);
@@ -37,5 +38,11 @@ public class GUI extends Frame {
     //main()
     public static void main (String[] args) {
         GUI testwindow = new GUI();
+
+
+        @Override
+        public void  actionPerformed(ActionEvent e) {
+            standardship.checkShip();
+        }
     }
 }
