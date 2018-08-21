@@ -1,4 +1,4 @@
-public class Spaceship extends Systems{
+public class Spaceship extends shipComponents{
     //here are the strings to create the spaceship
     String ShipName;
     static int Health;

@@ -22,7 +22,7 @@ public class shipComponents {
         partStatus = shipParts.get(shipComponent);
         for (shipParts.put(repairedComponent,true);
              !partStatus;
-             System.out.println(shipComponent + " has been repaired."));-
+             System.out.println(shipComponent + " has been repaired."));
     }
 
     //the command for checking statusses

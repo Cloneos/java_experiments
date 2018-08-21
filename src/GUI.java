@@ -41,7 +41,7 @@ public class GUI extends Frame implements ActionListener {
 
 
         @Override
-        public void  actionPerformed(ActionEvent e) {
+        public void  actionPerformed(ActionEvent evt) {
             standardship.checkShip();
         }
     }
