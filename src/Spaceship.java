@@ -1,4 +1,4 @@
-public class Spaceship extends shipComponents{
+public class Spaceship extends Systems{
     //here are the strings to create the spaceship
     String ShipName;
     static int Health;
@@ -13,16 +13,22 @@ public class Spaceship extends shipComponents{
 
     //this is for checking out the stats of a ship
     public void checkShip() {
-        System.out.println("Your ship is called " + ShipName + ".");
-        System.out.println("Your hull is at " + Health + "%.");
-        System.out.println("You have " + Ammo + " bullets.");
+        System.out.println("Your ship is called " + ShipName);
+        System.out.println("Your hull is at " + Health + "%");
+        System.out.println("You have " + Ammo + " bullets");
     }
 
 //this is the main command
     public static void main (String[] args) {
         Spaceship standardship = new Spaceship("Theseus",100,10);
         standardship.checkShip();
-        systemStatus("Warp Drive");
-        repairSystem("Warp Drive");
+        standardship.systemStatus("Life Support");
     }
 }
+/*
+my expected output is:
+
+Your ship is called Theseus
+Your health is 10
+You have 10 bullets
+ */
