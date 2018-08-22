@@ -10,11 +10,11 @@ public class GUI extends Frame implements ActionListener {
     private TextArea shipStatusTextArea;
 
     //Here go the variables
-    String displayedShipStatus;
+    private String displayedShipStatus;
     //String enteredShipName; for later
 
     //here is the user interface layout defined
-    public GUI() {
+    private GUI() {
         setLayout(new FlowLayout());
 
             //components go here
